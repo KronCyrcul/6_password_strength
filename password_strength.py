@@ -38,6 +38,6 @@ def print_password_strength(password_strength):
 
 
 if __name__ == "__main__":
-    password = input("Enter a passowrd\n")
+    password = input("Введите пароль\n")
     password_strength = get_password_strength(password)
     print_password_strength(password_strength)
