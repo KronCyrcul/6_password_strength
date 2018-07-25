@@ -19,10 +19,8 @@ def get_password_strength(password):
         password_strength += 2
     if len(passwords_special_characters):
         password_strength += 2
-    if not password.islower():
-        password_strength += 1
-    if not password.isupper():
-        password_strength += 1
+    if not password.islower() and not password.isupper():
+        password_strength += 2
     return password_strength
 
 
